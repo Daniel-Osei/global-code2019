@@ -1,27 +1,49 @@
-#print 1 - 10
-print ("print from 1 - 10")
+#first trial
+print ("printing from 1 - 10 with while")
+
 i = 0
-
 while(i < 10):
-    i = i + 1
-    print (i)
+	i = i + 1
+	print (i)
+
+input("press enter to continue")
+#try printing numbers from 7 - 19
+print ("print from 7 - 19")
+
+j = 6
+while(j < 19):
+	j = j + 1
+	print (j)
+
+input("press enter to continue")
+
+#print even numbers between 12 and 20
+print ("print even numbers between 12 and 20 ")
+
+k = 12
+while(k < 18):
+	k = k + 2
+	print (k)
+
+input("press enter to continue")
+
+#take two numbers from user and give even numbers between them
 
 
-print ("printing from 7 -19")
-#print from 7 - 19
-a = 6
+def even():
+	start = int(input("Enter the lower limit: "))
+	end = int(input("Enter the upper limit: "))
+	for num in range(start, end + 1):
+		if num % 2 == 0:
+			print (num)
 
-while(a < 19):
-    a = a + 1
-    print (a)
-    
+even()
 
-#print even numbers between 12 ans 20
-print ("method 1")
-j = 12
-while j <20:
-    print(j)
-    j +=2
+def reverse_even():
+	start = int(input("Enter the lower limit: "))
+	end = int(input("Enter the upper limit: "))
+	for num in range(start, end + 1):
+		if num % 2 == 0:
+			print (reversed(num))
 
-even_num = [x for x in range(13,20) if x % 2 == 0]
-print (even_num)it
+#reverse_even()
